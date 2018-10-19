@@ -397,4 +397,12 @@ Messages = [
 		NetStringStrict("m_Reason"),
 		NetBool("m_Force"),
 	]),
+
+	### Lua Shared
+	NetMessage("Lua_SharedValue", [
+		NetIntRange("m_TypeID", 0, 6),
+		NetStringStrict("m_VarName"),
+		NetString("m_StringVal"),
+	]),
+
 ]
